@@ -1,0 +1,56 @@
+.spot_cell{
+  @include clearfix;
+  background: #fff;
+  margin: 5px;
+  padding: 10px;
+  /*border-bottom: 1px dashed #2999c8;*/
+  .spot_image{
+    float: left;
+    display: block;
+    width:100px;
+    padding:3px;
+    margin-right: 10px;
+    @include border-radius(5px);
+    @include single-box-shadow;
+  }
+  .spot_infobox{
+    margin-left: 116px;
+    line-height: 20px;
+  }
+  .spot_title{
+    font-size: 15px;
+    font-weight: bold;
+    
+  }
+  .city{
+    background: #41b3d2;
+    @include border-radius(5px);
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+    padding:5px;
+    margin-right: 6px;
+  }
+  .spot_info{
+    @include clearfix;
+    .user{
+      float: left;
+      margin-right: 10px;
+      a{
+        color: #999;
+      }
+    }
+    .date{
+      float: left;
+      color: #999;
+      padding-left: 10px;
+      border-left: 1px dotted #999;
+    }
+  }
+  .spot_quote{
+    @include clearfix;
+    a{
+      color: #666;
+    }
+  }
+}
